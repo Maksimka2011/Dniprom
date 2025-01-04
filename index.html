@@ -3,65 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин Електро Товарів</title>
+  <title>Вироби з деревини</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <h1>ЕлектроТех</h1>
-    </div>
-    <nav class="nav">
-      <a href="#home">Головна</a>
-      <a href="#products">Товари</a>
-      <a href="#about">Про нас</a>
-      <a href="#contact">Контакти</a>
+    <nav class="navbar">
+      <a href="#" class="logo">Дерев'яний Стиль</a>
+      <ul class="menu">
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#products">Вироби</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
     </nav>
+    <div class="hero">
+      <h1>Якість та естетика з деревини</h1>
+      <p>Індивідуальний підхід до кожного виробу</p>
+      <a href="#products" class="btn">Переглянути вироби</a>
+    </div>
   </header>
 
-  <section id="home" class="home-section">
-    <h2>Ласкаво просимо до "ЕлектроТех"!</h2>
-    <p>Якісні електро товари за найкращими цінами.</p>
-    <button class="cta-btn">Переглянути товари</button>
-  </section>
-
-  <section id="products" class="products-section">
-    <h2>Наші товари</h2>
-    <div class="product-card">
-      <img src="product1.jpg" alt="Товар 1">
-      <h3>Світлодіодна лампа</h3>
-      <p>Ціна: 200 грн</p>
-      <button class="buy-btn">Купити</button>
-    </div>
-    <div class="product-card">
-      <img src="product2.jpg" alt="Товар 2">
-      <h3>Розетка</h3>
-      <p>Ціна: 150 грн</p>
-      <button class="buy-btn">Купити</button>
-    </div>
-    <div class="product-card">
-      <img src="product3.jpg" alt="Товар 3">
-      <h3>Подовжувач</h3>
-      <p>Ціна: 300 грн</p>
-      <button class="buy-btn">Купити</button>
-    </div>
-  </section>
-
-  <section id="about" class="about-section">
+  <section id="about" class="about">
     <h2>Про нас</h2>
-    <p>Ми працюємо на ринку електро товарів більше 10 років і пропонуємо лише якісну продукцію.</p>
+    <p>Ми спеціалізуємося на створенні унікальних дерев'яних виробів, які поєднують стиль, функціональність та екологічність.</p>
   </section>
 
-  <section id="contact" class="contact-section">
+  <section id="products" class="products">
+    <h2>Наші вироби</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="wood1.jpg" alt="Виріб 1">
+        <h3>Різьблені меблі</h3>
+        <p>Ексклюзивні меблі для вашого дому.</p>
+      </div>
+      <div class="product-card">
+        <img src="wood2.jpg" alt="Виріб 2">
+        <h3>Декор з дерева</h3>
+        <p>Стильні прикраси для інтер'єру.</p>
+      </div>
+      <div class="product-card">
+        <img src="wood3.jpg" alt="Виріб 3">
+        <h3>Індивідуальні замовлення</h3>
+        <p>Реалізація ваших ідей.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
     <h2>Контакти</h2>
-    <p>Телефон: +38 (067) 123-45-67</p>
-    <p>Адреса: Київ, вул. Електро 12</p>
+    <p>Зв'яжіться з нами для замовлення:</p>
+    <form action="#">
+      <input type="text" placeholder="Ваше ім'я" required>
+      <input type="email" placeholder="Ваш email" required>
+      <textarea placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Відправити</button>
+    </form>
   </section>
 
   <footer class="footer">
-    <p>© 2025 ЕлектроТех. Всі права захищені.</p>
+    <p>&copy; 2025 Дерев'яний Стиль. Всі права захищено.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
