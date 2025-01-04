@@ -1,14 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const ctaButton = document.querySelector('.cta-btn');
-  ctaButton.addEventListener('click', () => {
-    alert('Перенаправлення до розділу товарів...');
-    window.location.href = '#products';
-  });
-
-  const buyButtons = document.querySelectorAll('.buy-btn');
-  buyButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      alert('Товар додано до кошика!');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuLinks = document.querySelectorAll(".menu a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").slice(1);
+      document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
     });
   });
 });
